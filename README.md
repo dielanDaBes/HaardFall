@@ -3,6 +3,9 @@ Haar Cascades model creator<br/>
 
 https://pythonprogramming.net/haar-cascade-object-detection-python-opencv-tutorial/
 
+NOTE: cloning repo from scratch is untested, may have to include opencv and contrib as submodules and specify a branch 
+https://stackoverflow.com/a/18797720
+
 Build openCV inside opencv folder:
 ``` sh
 mkdir build && cd build
