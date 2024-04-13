@@ -3,6 +3,14 @@ Haar Cascades model creator<br/>
 
 https://pythonprogramming.net/haar-cascade-object-detection-python-opencv-tutorial/
 
+Build openCV inside opencv folder:
+``` sh
+mkdir build && cd build
+```
+
+``` sh
+cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D INSTALL_PYTHON_EXAMPLES=ON -D OPENCV_EXTRA_MODULES_PATH=~/opencv_contrib/modules -D BUILD_EXAMPLES=ON ..
+```
 
 # Create Positive Samples
 Replace \<IMAGENAME\> with name of image that the model will be trained to detect
