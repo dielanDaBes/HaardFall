@@ -5,7 +5,7 @@ https://pythonprogramming.net/haar-cascade-object-detection-python-opencv-tutori
 
 
 # Create Positive Samples
-Replace <IMAGENAME> with name of image that the model will be trained to detect
+Replace "<IMAGENAME>" with name of image that the model will be trained to detect
 ``` sh
 opencv_createsamples -img <IMAGENAME> -bg bg.txt -info info/info.lst -pngoutput info -maxxangle 0.5 -maxyangle 0.5 -maxzangle 0.5 -num 1950
 ```
