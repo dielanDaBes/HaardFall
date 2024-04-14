@@ -28,4 +28,7 @@ Train model with 10 levels:
 ``` sh
 opencv_traincascade -data data -vec positives.vec -bg bg.txt -numPos 1800 -numNeg 900 -numStages 10 -w 20 -h 20
 ```
-Copy the output cascade.xml file from the data directory into your project for detection
+Copy the output cascade.xml file from the data directory into your project for detection <br/>
+
+#Testing
+Run test.py - cascade file should be named test.xml and full image containing the object to detect should be called testMatchFull.PNG
