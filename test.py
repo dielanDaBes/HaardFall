@@ -19,11 +19,11 @@ parser = argparse.ArgumentParser(description='Haar Cascade detector with XML cas
 
 # field, and using a default value if the argument 
 # isn't given
-parser.add_argument('--cascade', action="store", dest='cascade', default='test.xml')
-parser.add_argument('--inputImage', action="store", dest='inputImage', default='testInputFull.PNG')
-parser.add_argument('--outputImage', action="store", dest='outputImage', default='testOutputFull.jpg')
-parser.add_argument('--neighbors', action="store", dest='neighbors', default=5)
-parser.add_argument('--lineSize', action="store", dest='lineSize', default=2)
+parser.add_argument('--cascade', action="store", dest='cascade', default='test.xml', help="Cascade classifier file in xml format")
+parser.add_argument('--inputImage', action="store", dest='inputImage', default='testInputFull.PNG', help="Input image that contains object to detect")
+parser.add_argument('--outputImage', action="store", dest='outputImage', default='testOutputFull.jpg', help="Output image with rectangle around detected object")
+parser.add_argument('--neighbors', action="store", dest='neighbors', default=5, help="Cascade classifier parameter- higher is more sensitive, see openCV docs for more details")
+parser.add_argument('--lineSize', action="store", dest='lineSize', default=2, help="Size of rectangle around detected object")
 
 # Now, parse the command line arguments and store the 
 # values in the `args` variable
