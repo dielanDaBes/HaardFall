@@ -24,6 +24,7 @@ parser.add_argument('--inputImage', action="store", dest='inputImage', default='
 parser.add_argument('--outputImage', action="store", dest='outputImage', default='testOutputFull.jpg', help="Output image with rectangle around detected object")
 parser.add_argument('--neighbors', action="store", dest='neighbors', default=5, help="Cascade classifier parameter- higher is more sensitive, see openCV docs for more details")
 parser.add_argument('--lineSize', action="store", dest='lineSize', default=2, help="Size of rectangle around detected object")
+parser.add_argument('--show', action="store", dest='showImage', default=False, help="Set to true if you want openCV to show the output image - will not work with open-cv headless")
 
 # Now, parse the command line arguments and store the 
 # values in the `args` variable
@@ -36,3 +37,5 @@ test_cascade = cv2.CascadeClassifier(args.cascade)
 img = cv2.imread(args.inputImage)
 test = detect_test(img)
 cv2.imwrite(args.outputImage, test)
+if(showImage)
+     cv2.imshow(test)
