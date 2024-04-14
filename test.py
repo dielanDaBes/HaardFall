@@ -10,7 +10,7 @@ parser = argparse.ArgumentParser(description='Haar Cascade detector with XML cas
 parser.add_argument('--cascade', action="store", dest='cascade', default='test.xml')
 parser.add_argument('--inputImage', action="store", dest='inputImage', default='testFullMatch.PNG')
 parser.add_argument('--outputImage', action="store", dest='outputImage', default='CascadeMatchFull.jpg')
-parser.add_argument('--neighbors', action="store", dest='neighbors', default==5)
+parser.add_argument('--neighbors', action="store", dest='neighbors', default=5)
 
 # Now, parse the command line arguments and store the 
 # values in the `args` variable
