@@ -14,9 +14,6 @@ parser.add_argument('--outputImage', action="store", dest='outputImage', default
 # Now, parse the command line arguments and store the 
 # values in the `args` variable
 args = parser.parse_args()
-
-# Individual arguments can be accessed as attributes...
-print (args.algo)
  
  
 # Read in the cascade classifiers for face and eyes
