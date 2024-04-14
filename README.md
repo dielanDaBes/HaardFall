@@ -1,5 +1,5 @@
 # HaardFall
-Haar Cascades model creator. Tested on Raspberry pi 4 running latest Bullseye distro using openCV 3.4<br/>
+Haar Cascades model creator. Tested on Raspberry pi 4 running latest Bullseye 6.1.21-v8+ using openCV 3.4 and python 3.9.2<br/>
 
 https://pythonprogramming.net/haar-cascade-object-detection-python-opencv-tutorial/
 
