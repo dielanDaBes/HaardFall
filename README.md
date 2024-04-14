@@ -30,5 +30,9 @@ opencv_traincascade -data data -vec positives.vec -bg bg.txt -numPos 1800 -numNe
 ```
 Copy the output cascade.xml file from the data directory into your project for detection <br/>
 
-#Testing
-Run test.py - cascade file should be named test.xml and full image containing the object to detect should be called testMatchFull.PNG
+# Testing
+Run test.py - cascade file should be named test.xml and full image containing the object to detect should be called testMatchFull.PNG <br/>
+For additional args help:
+``` sh
+python test.py --help
+```
