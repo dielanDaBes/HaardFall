@@ -19,12 +19,12 @@ parser = argparse.ArgumentParser(description='Haar Cascade detector with XML cas
 
 # field, and using a default value if the argument 
 # isn't given
-parser.add_argument('--cascade', action="store", dest='cascade', default='test.xml', help="Cascade classifier file in xml format")
-parser.add_argument('--inputImage', action="store", dest='inputImage', default='testInputFull.PNG', help="Input image that contains object to detect")
-parser.add_argument('--outputImage', action="store", dest='outputImage', default='testOutputFull.jpg', help="Output image with rectangle around detected object")
-parser.add_argument('--neighbors', action="store", dest='neighbors', default=5, help="Cascade classifier parameter- higher is more sensitive, see openCV docs for more details")
-parser.add_argument('--lineSize', action="store", dest='lineSize', default=2, help="Size of rectangle around detected object")
-parser.add_argument('--show', action="store", dest='showImage', default=False, help="Set to true if you want openCV to show the output image - will not work with open-cv headless")
+parser.add_argument('-c', '--cascade', action="store", dest='cascade', default='test.xml', help="Cascade classifier file in xml format")
+parser.add_argument('-i', '--inputImage', action="store", dest='inputImage', default='testInputFull.PNG', help="Input image that contains object to detect")
+parser.add_argument('-o', '--outputImage', action="store", dest='outputImage', default='testOutputFull.jpg', help="Output image with rectangle around detected object")
+parser.add_argument('-n', '--neighbors', action="store", dest='neighbors', default=5, help="Cascade classifier parameter- higher is more sensitive, see openCV docs for more details")
+parser.add_argument('-l', '--lineSize', action="store", dest='lineSize', default=2, help="Size of rectangle around detected object")
+parser.add_argument('-s', '--show', action="store", dest='showImage', default=False, help="Set to true if you want openCV to show the output image - will not work with open-cv headless")
 
 # Now, parse the command line arguments and store the 
 # values in the `args` variable
