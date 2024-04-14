@@ -1,10 +1,8 @@
 # HaardFall
 Haar Cascades model creator. Tested on Raspberry pi 4 running latest Bullseye 6.1.21-v8+ using openCV 3.4 and python 3.9.2<br/>
 
+Based on the project below: <br/>
 https://pythonprogramming.net/haar-cascade-object-detection-python-opencv-tutorial/
-
-NOTE: cloning repo from scratch is untested, may have to include opencv and contrib as submodules and specify a branch 
-https://stackoverflow.com/a/18797720
 
 Build openCV inside opencv folder:
 ``` sh
