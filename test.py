@@ -38,4 +38,4 @@ img = cv2.imread(args.inputImage)
 test = detect_test(img)
 cv2.imwrite(args.outputImage, test)
 if(args.showImage):
-     cv2.imshow(test)
+     cv2.imshow(args.outputImage, test)
