@@ -22,7 +22,7 @@ test_cascade = cv2.CascadeClassifier(args.cascade)
 def detect_test(img):
      
     test_img = img.copy()    
-    test_rect = test_cascade.detectMultiScale(tes_img, 
+    test_rect = test_cascade.detectMultiScale(test_img, 
                                             scaleFactor = 1.2, 
                                             minNeighbors = 5)    
     for (x, y, w, h) in test_rect:
