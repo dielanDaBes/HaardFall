@@ -1,6 +1,5 @@
 # Importing all required packages
 import cv2
-import matplotlib.pyplot as plt #% matplotlib inline
 import argparse
 
 # Define the parser
@@ -37,5 +36,4 @@ def detect_test(img):
 
 img = cv2.imread(args.inputImage)
 test = detect_test(img)
-plt.imshow(test)
 cv2.imwrite(args.outputImage, test)
