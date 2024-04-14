@@ -34,7 +34,7 @@ Copy the output cascade.xml file from the data directory into your project for d
 ``` sh
 python test.py
 ```
-Above assumes cascade file name is in root directory named "test.xml" and input image is named "testInputFull.PNG"
+Above assumes cascade file name is in root directory named "test.xml" and input image is named "testInputFull.PNG" <br/>
 For additional args help:
 ``` sh
 python test.py --help
