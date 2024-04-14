@@ -37,5 +37,5 @@ test_cascade = cv2.CascadeClassifier(args.cascade)
 img = cv2.imread(args.inputImage)
 test = detect_test(img)
 cv2.imwrite(args.outputImage, test)
-if(showImage):
+if(args.showImage):
      cv2.imshow(test)
