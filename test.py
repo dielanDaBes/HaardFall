@@ -10,12 +10,13 @@ parser = argparse.ArgumentParser(description='Haar Cascade detector with XML cas
 parser.add_argument('--cascade', action="store", dest='cascade', default='test.xml')
 parser.add_argument('--inputImage', action="store", dest='inputImage', default='testFullMatch.PNG')
 parser.add_argument('--outputImage', action="store", dest='outputImage', default='CascadeMatchFull.jpg')
+parser.add_argument('--neighbors', action="store", dest='neighbors', default==5)
 
 # Now, parse the command line arguments and store the 
 # values in the `args` variable
 args = parser.parse_args()
  
- 
+print(args)
 # Read in the cascade classifiers for face and eyes
 test_cascade = cv2.CascadeClassifier(args.cascade)
 
@@ -24,7 +25,7 @@ def detect_test(img):
     test_img = img.copy()    
     test_rect = test_cascade.detectMultiScale(test_img, 
                                             scaleFactor = 1.2, 
-                                            minNeighbors = 5)    
+                                            minNeighbors = args.neighbors)    
     for (x, y, w, h) in test_rect:
         cv2.rectangle(test_img, (x, y), 
                       (x + w, y + h), (255, 255, 255), 10)        
