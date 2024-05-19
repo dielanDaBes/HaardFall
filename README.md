@@ -22,6 +22,10 @@ Transform positive images into vector:
 ``` sh
 opencv_createsamples -info info/info.lst -num 1950 -w 20 -h 20 -vec positives.vec
 ```
+Create data directory:
+``` sh
+mkdir data
+```
 Train model with 10 levels:
 ``` sh
 opencv_traincascade -data data -vec positives.vec -bg bg.txt -numPos 1800 -numNeg 900 -numStages 10 -w 20 -h 20
