@@ -32,7 +32,7 @@ opencv_traincascade -data data -vec positives.vec -bg bg.txt -numPos 1800 -numNe
 ```
 Copy the output cascade.xml file from the data directory into your project for detection <br/>
 
-NOTE: For a fresh restart you may need to clear the info and data directories and remove the positives.vec file
+NOTE: For a fresh restart you may need to clear the info and data directories and remove the positives.vec file. You also need to make sure you either rename the last layer of the cascade file "test.xml" or point the test script to the proper file
 
 # Testing
 ``` sh
